@@ -9,9 +9,8 @@ client.on('message', message => {
     if (message.content === '!danse') {
     	message.reply('Outstanding.');
   	}
-});
-
-client.on('message', message => {
+    
+    {
     if (message.content === '!paladin') {
     	message.reply('Ad Victoriam.');
   	}
