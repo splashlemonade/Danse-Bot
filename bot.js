@@ -24,6 +24,12 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content === '!jfk') {
+    	message.reply('What if nobody shot me and my head just did that?');
+  	}
+});
+
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
