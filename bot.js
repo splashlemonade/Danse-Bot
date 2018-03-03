@@ -30,6 +30,18 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content === '!paladin') {
+    	message.reply('Ad Victoriam.');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!dnse') {
+    	message.reply('Whatever caused our fate to intertwine would never let them unravel.');
+  	}
+});
+
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
