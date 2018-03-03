@@ -8,9 +8,16 @@ client.on('ready', () => {
 client.on('message', message => {
     if (message.content === '!danse') {
     	message.reply('Outstanding.');
-        message.reply('With you standing by me, I feel like I can take on the world.');
-        message.reply('If I lost you, I don't know what I'd do.');
     }
+    
+    if (message.content === '!johnfield') {
+    message.reply('If I lost you, I don't know what I'd do.');
+}
+          
+    {
+    if (message.content === '!d*nse') {
+    	message.reply('With you standing by me, I feel like I can take on the world..');
+  	}
     
     {
     if (message.content === '!paladin') {
