@@ -1,14 +1,13 @@
 {
-  "name": "danse-bot",
-  "version": "1.0.0",
-  "description": "his head just does that",
+  "name": "Test",
+  "description": "Test",
+  "version": "0.0.0",
   "main": "bot.js",
   "scripts": {
-  "start": "node bot.js"
+    "start": "node bot.js"
   },
-  "author": "Cillian",
   "dependencies": {
-    "discord.io": "github:woor/discord.io#gateway_v6",
-    "winston": "^2.4.0"
+    "discord.js": "11.1.0",
+    "request": "2.81.0"
   }
 }
