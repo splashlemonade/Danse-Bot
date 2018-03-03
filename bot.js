@@ -40,6 +40,12 @@ client.on('message', message => {
     if (message.content === '!dnse') {
     	message.reply('Whatever caused our fate to intertwine would never let them unravel.');
   	}
+
+client.on('message', message => {
+    if (message.content === '!dash') {
+    	message.reply('I like it when you are this close.');
+  	}
+    
 });
 
 
