@@ -43,6 +43,18 @@ client.on('message', message => {
     
 });
 
+client.on('message', message => {
+    if (message.content === '!testing') {
+function show_image(src, width, height, alt) {
+    var img = document.createElement("https://media.discordapp.net/attachments/419305970863308800/419603904456556544/johnfieldkennedy.png?width=577&height=473");
+    img.src = src;
+    img.width = width;
+    img.height = height;
+    img.alt = alt;
+
+    // This next line will just add it to the <body> tag
+    document.body.appendChild(img);
+}
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
