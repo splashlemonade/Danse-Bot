@@ -4,7 +4,7 @@ const Discord = require("discord.js");
 const myBot = new Discord.Client();
 
 // Loading global variables
-const danseResponses = ["Ad Victoriam.", "Outstanding.", "What if nobody shot me and my head just did that?"];
+const helloResponses = ["Hello", "Hi", "Hi there"];
 
 // The onReady even handler. Will get executed only once.
 myBot.on('ready', function () {
@@ -23,8 +23,8 @@ myBot.on('message', function (message) {
     var args = message.content.substring("!".length).split(" ");
 
     switch (args[0].toLowerCase()) {
-        case "danse":
-            var response = danseResponses [Math.floor(Math.random()*danseResponses .length)];
+        case "hello":
+            var response = helloResponses [Math.floor(Math.random()*helloResponses .length)];
 
             message.channel.send(response).then().catch(console.error);
             break;
