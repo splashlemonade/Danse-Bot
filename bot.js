@@ -15,6 +15,9 @@ async def insoviet(ctx):
     current_response = random.choice(possible_responses)
 
     await client.say(current_response)
+    }
+  
+}};
 
 client.on('message', message => {
     if (message.content === '!danse') {
