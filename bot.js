@@ -43,5 +43,19 @@ client.on('message', message => {
     
 });
 
+client.on('message', message => {
+    if (message.content === '!Danse') {
+    	message.reply('Godless heathens!');
+  	}
+    
+});
+
+client.on('message', message => {
+    if (message.content === '!DANSE') {
+    	message.reply('I am more of a country-western and bluegrass fan myself.');
+  	}
+    
+});
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
