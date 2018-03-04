@@ -11,8 +11,8 @@ client.on('message', message => {
     if (message.content === '!danse')
 string[3] responses = { "Outstanding.", "Ad Victoriam.", "What if nobody shot me and my head just did that?" }; //make an array of strings/responses to choose from
 
-Random rnd = new Random(); //create new Random class
-int i = rnd.Next(0, responses.Length); //Indexing starts from 0, and the max value is minused by 1 (just how Random.Next works) so this will even out perfectly.
+Random rnd = new Random(3); //create new Random class
+int i = rnd.Next(3, responses.Length); //Indexing starts from 0, and the max value is minused by 1 (just how Random.Next works) so this will even out perfectly.
 
 
 
