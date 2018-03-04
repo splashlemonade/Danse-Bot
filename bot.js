@@ -5,17 +5,10 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
-var answers = [
-  "Hey",
-  "Howdy",
-  "Hello There",
-  "Wotcha",
-  "Alright gov'nor"
-]
-
-var randomAnswer = answers[Math.floor(Math.random() * answers.length)];
-
-console.log(randomAnswer);
+client.on('message', message => {
+    if (message.content === '!danse') {
+    	message.reply('Outstanding.');
+    }
     
 });
 
@@ -84,6 +77,14 @@ client.on('message', message => {
     }
     
 });
+
+client.on('message', message => {
+    if (message.content === '!dns') {
+    	message.reply('You are one hell of a soldier.');
+    }
+    
+});
+
 
 
 // THIS  MUST  BE  THIS  WAY
