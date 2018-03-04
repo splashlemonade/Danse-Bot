@@ -43,11 +43,5 @@ client.on('message', message => {
     
 });
 
-   client.on('message', message => {
-    if (message.content === '!testing') {
-    message.reply (file: 'app.net/attachments/419305970863308800/419603904456556544/johnfieldkennedy.png');
-    } // Or replace with FileOptions object
-});
-
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
