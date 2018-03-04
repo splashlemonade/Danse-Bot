@@ -7,7 +7,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === '!danse') {
-        message.reply var responses = ["Well hello there!","Hello","Hola!"];
+        var message.reply('Well hello there!','Hello','Hola!');
 var totalResponses = responses.length;
 var responseIndex = Math.floor((Math.random() * 10) + 1) % totalResponses;
 var response = responses[responseIndex];
