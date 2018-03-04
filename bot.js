@@ -5,9 +5,7 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
-client.on('message', message => {
-    if (message.content === '!danse') {
-        var answers = [
+var answers = [
   "Hey",
   "Howdy",
   "Hello There",
