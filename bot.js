@@ -1,30 +1,36 @@
-import random
+// Loading dependencies
+const Discord = require("discord.js");
+// Create a new bot object
+const myBot = new Discord.Client();
 
-const Discord = require('discord.js');
-const client = new Discord.Client();
+// Loading global variables
+const danseResponses = ["Ad Victoriam.", "Outstanding.", "What if nobody shot me and my head just did that?"];
 
-client.on('ready', () => {
-    console.log('I am ready!');
+// The onReady even handler. Will get executed only once.
+myBot.on('ready', function () {
+    console.log(`${myBot.user.username} online!`);
 });
 
-client.on('message', message => {
-    if (message.content === '!danse')
-string[3] responses = { "Outstanding.", "Ad Victoriam.", "What if nobody shot me and my head just did that?" }; //make an array of strings/responses to choose from
+// The onMessage event handler
+myBot.on('message', function (message) {
+    // It is considered bad practice to let your bot react to other bots.
+    if (message.author.bot) return;
 
-Random rnd = new Random(3); //create new Random class
-int i = rnd.Next(3, responses.Length); //Indexing starts from 0, and the max value is minused by 1 (just how Random.Next works) so this will even out perfectly.
+    // If a message doesn't start with your bot's prefix, don't bother going through the cases.
+    if (!message.content.startsWith("!")) return;
 
+    // Args length check. #1 is the command, #2 and higher are the arguments
+    var args = message.content.substring("!".length).split(" ");
 
+    switch (args[0].toLowerCase()) {
+        case "danse":
+            var response = danseResponses [Math.floor(Math.random()*danseResponses .length)];
 
-e.Channel.SendMessage(responses[i]); //Not sure what e.Channel.SendMessage is in the newer library versions, but that's what it is in 0.9.6 and it should be similar in the newer versions
-
-});
-
-client.on('message', message => {
-    if (message.content === '!danse') {
-    	message.reply('Outstanding.');
+            message.channel.send(response).then().catch(console.error);
+            break;
+        default:
+            break;
     }
-
 });
 
 // THIS  MUST  BE  THIS  WAY
