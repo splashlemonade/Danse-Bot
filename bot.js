@@ -44,7 +44,8 @@ client.on('message', message => {
 });
 
     message.channel.send("!testing", {
-    file: "app.net/attachments/419305970863308800/419603904456556544/johnfieldkennedy.png" // Or replace with FileOptions object
+    file: "app.net/attachments/419305970863308800/419603904456556544/johnfieldkennedy.png"
+    } // Or replace with FileOptions object
 });
 
 // THIS  MUST  BE  THIS  WAY
