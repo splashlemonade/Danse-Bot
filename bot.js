@@ -85,6 +85,41 @@ client.on('message', message => {
     
 });
 
+client.on('message', message => {
+    if (message.content === '!D*nse') {
+    	message.reply('This is an astonishing waste of technology.');
+    }
+    
+});
+
+client.on('message', message => {
+    if (message.content === '!D*NSE') {
+    	message.reply('This place would elicit fear in most individuals. Fortunately my training prevents... wait... what was that?');
+    }
+    
+});
+
+client.on('message', message => {
+    if (message.content === '!danse danse') {
+    	message.reply('Revolution');
+    }
+    
+});
+
+client.on('message', message => {
+    if (message.content === '!safety danse') {
+    	message.reply('We can dance if we want to, we can leave our friends behind.');
+    }
+    
+});
+
+client.on('message', message => {
+    if (message.content === '!paladin danse') {
+    	message.reply('Whats the matter? Dont like kicking in the door?');
+    }
+    
+});
+
 
 
 // THIS  MUST  BE  THIS  WAY
