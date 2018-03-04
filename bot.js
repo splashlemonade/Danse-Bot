@@ -151,6 +151,20 @@ client.on('message', message => {
     
 });
 
+client.on('message', message => {
+    if (message.content === '!dance dance') {
+    	message.reply('Were falling apart to half time.');
+    }
+    
+});
+
+client.on('message', message => {
+    if (message.content === '!dance dance!') {
+    	message.reply('And these are the lives you love to lead.');
+    }
+    
+});
+
 
 
 // THIS  MUST  BE  THIS  WAY
