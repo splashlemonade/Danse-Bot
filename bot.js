@@ -25,6 +25,12 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
+    if (message.content === '!Dash') {
+    	message.reply('I hope one day you will be able to come to terms with whatever demons youre fighting.');
+  	}
+});
+
+client.on('message', message => {
     if (message.content === '!jfk') {
     	message.reply('What if nobody shot me and my head just did that?');
   	}
@@ -44,10 +50,28 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
+    if (message.content === '!Paladin Danse') {
+    	message.reply('Dont worry, the only reason I am here is to get slightly intoxicated.');
+  	}
+});
+
+client.on('message', message => {
     if (message.content === '!Danse') {
     	message.reply('Godless heathens!');
   	}
     
+});
+
+client.on('message', message => {
+    if (message.content === '!Paladin D*nse') {
+    	message.reply('I bet a months pay that we will find an illicit experiment gone awry inside this vault..');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!paladin d*nse') {
+    	message.reply('These mirelurks obviously have no respect for the historical significance of this location.');
+  	}
 });
 
 client.on('message', message => {
