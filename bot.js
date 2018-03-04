@@ -144,6 +144,13 @@ client.on('message', message => {
     
 });
 
+client.on('message', message => {
+    if (message.content === '!danse fucker danse') {
+    	message.reply('Man he never had a chance.');
+    }
+    
+});
+
 
 
 // THIS  MUST  BE  THIS  WAY
