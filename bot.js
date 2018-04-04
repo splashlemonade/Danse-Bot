@@ -26,7 +26,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '!warriormale') {
-    	message.reply('Train and fight!');
+    	message.reply('Train and Fight!');
   	}
 });
 
