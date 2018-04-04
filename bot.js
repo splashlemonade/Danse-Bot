@@ -25,6 +25,12 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
+    if (message.content === '!warriormale') {
+    	message.reply('Train and fight!');
+  	}
+});
+
+client.on('message', message => {
     if (message.content === '!Dash') {
     	message.reply('I hope one day you will be able to come to terms with whatever demons youre fighting.');
   	}
